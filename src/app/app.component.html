@@ -1,0 +1,16 @@
+<div class="container-fluid bg-light">
+  <div class="container bg-light mt-4 shadow" style="height: 500px;width: 500px;">
+
+    <div class="bg-success mt-2 text-center">
+      <h1 class="text-white ">To Do Scheduler</h1>
+    </div>
+
+    <div >
+
+      <input style="height: 70px; width: 100%;" (keyup.enter)="onSubmit($event)" placeholder="Press enter to add it to the list" type="text">
+    </div>
+    <h4 class="text-primary mt-4">Tasks :</h4>
+
+    <button  style="height: 40px; width: 100%;" *ngFor="let task of tasks" >{{task}}</button >
+  </div>
+</div>
